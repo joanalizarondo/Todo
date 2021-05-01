@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 50px 1.5em;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.hide-separator {
+    display: none;
+}
+.logo img{
+    width: 40px;
+}
+
+.hammenu {
+    width: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background:  #E44232;
+    height: 100%;
+    padding-top:  3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+}
+
+nav ul li a:hover{
+    background-color:  #f06558;
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: .3em 1em;
+}
+
+.exit-btn img{
+    width: 25px;
+    cursor: pointer;
+}
+
+footer {
+    background-color:  #E44232;
+    height: 200px;
+    margin-top: 50px;
+    padding: 3em 0;
+}
+
+.footercontainer{
+    padding: 20px;
+}
+
+.footerpara {
+    color: white;
+    margin: 1em;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: .1em 0;
+}
+
+footer li{
+    padding-top: 2em ;
+    font-size: .8em ;
+    display: inline-block;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0 1em;
+}
+
+footer ul li a:hover{
+   text-decoration: underline;
+}
+
+.h1header {
+    font-size: 2.5em;
+    padding: 20px 10px 50px 10px;
+}
+
+.cardcontainer {
+    width: 350px;
+    margin: 0px auto;
+    position: block;
+    background: none;
+}
+
+.card{
+    position: block;
+    background: #fff;
+    margin: 0 50px 50px 50px;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px 2px rgb(236, 236, 236);
+}
+.card h1{
+    padding: 50px 0 10px 10px;
+}
+
+.card h2 {
+    font-weight: 100 ;
+    font-size: 1.2em;
+    color: rgb(95, 95, 95);
+    margin: 5px 0 2px 0;
+}
+
+.card h3 {
+    font-weight: lighter;
+    font-size: 3em;
+    margin: 5px 0 2px 0;
+    padding-bottom: 20px;
+}
+
+.card button {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 1em 5em;
+    border-style: none;
+    background-color:  #E44232;
+    border-radius: .5em;
+}
+
+.card p {
+    margin: 5px 10px 5px 10px;
+    padding: 5px 10px 40px 5px;
+    font-weight: 100 ;
+    font-size: .9em;
+    color: rgb(94, 94, 94);
+}
+.card button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card button a:hover{
+    text-decoration: underline;
+ }
+
+
+
+@media only screen and (min-width: 522px) {
+    .cardcontainer {
+        margin: 0px auto;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+
+}
+
+@media only screen and (min-width: 875px) {
+    .cardcontainer {
+        width: 1000px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+    .show-desktop {
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    
+
+    nav ul {
+        width: auto;
+        background: none;
+        position: absolute;
+        display: block;
+        padding-top:  1.4em;
+        padding-right: 80px;
+        font-weight: bold;
+    }
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a{
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 1.5em;
+    }
+    
+    .logo{
+        padding-left: 80px;
+    }
+
+    nav ul li a:hover{
+        color: #E44232;
+        background-color: white;
+    }
+
+    .separator {
+        display: block;
+        padding: .9em 1.5em;
+        color: #E44232;
+    }
+
+    .separator:before {
+        content:'|';
+    }
+
+    .cardcontainer {
+        display: flex;
+        padding: 0;
+    }
+} 
+
+
+@media only screen and (min-width: 1440px) {
+    nav ul {
+        padding-right: 160px;
+    }
+
+    .logo{
+        padding-left: 160px;
+    }
+
+    .slogan{
+        padding: 0 5em;
+    }
+    .mobilehome{
+        padding-left: 650px;
+        margin-top: -435px;
+        padding-bottom: 120px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .mobilehome{
+        padding-left: 1000px;
+        margin-top: -590px;
+        padding-bottom: 100px;
+    }
+}
